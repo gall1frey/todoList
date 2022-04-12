@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="centered">
+      <div class="title2">
+        Add Item
+      </div>
+      <div class="lists">
+        <form class="form" action="#" th:action="@{/add}" th:object="${todo0}" method="post">
+        	<p>Task: <input class="input" type="text" th:field="*{name}" /></p>
+          <p><input type="submit" value="Submit" class="submit-button" /> <input type="reset" class="submit-button" value="Reset" /></p>
+        </form>
+      </div>
+      <div class="buttons">
+        <button type="button" name="button" onclick="location.href='/';">Home</button>
+      </div>
+    </div>
+  </body>
+</html>

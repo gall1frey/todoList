@@ -1,0 +1,164 @@
+/** {
+	border: solid 1px red;
+}
+*/
+body {
+	background: #FFF;
+  background-image: url('DOW44W6.jpg');
+  font-family: 'Shadows Into Light', cursive;
+  color: #FFF;
+}
+
+.centered {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.title1 {
+    margin: auto;
+		text-align: center;
+		font-weight: lighter;
+		font-size: 9em;
+}
+
+.title2 {
+    margin: auto;
+		text-align: center;
+		font-weight: lighter;
+		font-size: 5em;
+}
+
+.subtitle {
+	margin: auto;
+	text-align: center;
+	font-size: 2em;
+}
+
+.lists {
+	margin: auto;
+	height: 80%;
+	width: 60%;
+	overflow: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.lists::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+	display: flex;
+	flex-direction: row;
+	height: 15%;
+	margin-bottom: 2%;
+	overflow: hidden;
+	--ntp-realbox-height: 50px;
+  border: 0;
+  border: 1px solid #ddd;
+  border-radius: calc(0.5 * var(--ntp-realbox-height));
+	background-color: rgba(255,255,255,0.5);
+	color: black;
+}
+
+.item .text {
+	width: 80%;
+	font-size: 1.7em;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 1%;
+}
+
+.true {
+	background-color: rgba(255,255,255,0.2);
+	/*display: none;*/
+}
+
+.item .check {
+	min-width: 70px;
+	font-size: 1.5em;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.container input {
+	cursor: pointer;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+button {
+	margin: auto;
+	margin-top: 2%;
+  --ntp-realbox-height: 44px;
+  border: 0;
+  border: 3px solid #ddd;
+  border-radius: calc(0.5 * var(--ntp-realbox-height));
+  outline: none;
+  width: 20%;
+  text-align: center;
+  font-size: 26px;
+  font-family: 'Shadows Into Light', cursive;
+  background-color: rgba(255,255,255,0);
+  color: #fff;
+}
+
+button:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.form {
+	justify-content: center;
+	text-align: center;
+}
+
+.input {
+	margin: auto;
+	margin-top: 2%;
+  --ntp-realbox-height: 44px;
+  border: 0;
+  border: 3px solid #ddd;
+  border-radius: calc(0.5 * var(--ntp-realbox-height));
+  outline: none;
+	font-family: 'Shadows Into Light', cursive;
+	color: #fff;
+	width: 80%;
+  font-size: 2em;
+  height: 100%;
+  padding: 4px 20px 0;
+	background-color: rgba(255,255,255,0);
+}
+
+.input:active {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.submit-button {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2em;
+  height: 50px;
+  margin-top: 38px;
+  // outline: 0;
+  text-align: center;
+  width: 50%;
+	margin: auto;
+	margin-top: 2%;
+  --ntp-realbox-height: 44px;
+  border: 0;
+  border: 3px solid #ddd;
+  border-radius: calc(0.5 * var(--ntp-realbox-height));
+  outline: none;
+	font-family: 'Shadows Into Light', cursive;
+	background-color: rgba(255,255,255,0);
+}
+
+.submit-button:hover {
+  background-color: rgba(255,255,255,0.2);
+}
